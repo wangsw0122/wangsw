@@ -287,8 +287,8 @@ func parallel() {
 	var a1, a2, b1, b2 float64
 	fmt.Println("依次输入直线两个坐标:")
 	fmt.Scanf("(%f,%f),(%f,%f),(%f,%f),(%f,%f)", &x1, &y1, &x2, &y2, &a1, &b1, &a2, &b2)
-	inclination1:=(y2-y1)/(x2-x1)
-	inclination2:=(b2-b1)/(a2-a1)
+	inclination1:=(y2-y1)*(a2-a1)
+	inclination2:=(b2-b1)*(x2-x1)
 	if inclination1==inclination2 {
 		fmt.Println("两直线平行")
 	} else {
